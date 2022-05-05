@@ -83,4 +83,12 @@ public class MainControllerGUI {
     {
         return mainStage;
     }
+
+    public UpdateGUI getUpdateGUI() {
+        return updateGUI;
+    }
+
+    public SearchGUI getSearchGUI() {
+        return searchGUI;
+    }
 }

@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
@@ -20,21 +19,6 @@ public class SearchGUI {
 
     @FXML
     private TextField nameTxtSearch;
-
-    @FXML
-    private Button searchByName;
-
-    @FXML
-    private Button goBackSearch;
-
-    @FXML
-    private Button searchBySurname;
-
-    @FXML
-    private Button searchByFullName;
-
-    @FXML
-    private Button searchByCode;
 
     @FXML
     private ListView<?> searchResults;
@@ -56,6 +40,43 @@ public class SearchGUI {
     }
 
     @FXML
+    void deleteBt(ActionEvent event) {
+
+    }
+
+    @FXML
+    void goToUpdate(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("UpdateWindow.fxml"));
+        fxmlLoader.setController(mainControllerGUI.getUpdateGUI());
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+        mainControllerGUI.getMainStage().setScene(scene);
+        mainControllerGUI.getMainStage().setTitle("Update");
+        mainControllerGUI.getMainStage().show();
+    }
+
+
+    @FXML
+    void searchByCode(ActionEvent event) {
+
+    }
+
+    @FXML
+    void searchByFullName(ActionEvent event) {
+
+    }
+
+    @FXML
+    void searchByName(ActionEvent event) {
+
+    }
+
+    @FXML
+    void searchBySurname(ActionEvent event) {
+
+    }
+
+    @FXML
     void goBackMain(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainWindow.fxml"));
         fxmlLoader.setController(mainControllerGUI);
@@ -64,15 +85,5 @@ public class SearchGUI {
         mainControllerGUI.getMainStage().setScene(scene);
         mainControllerGUI.getMainStage().setTitle("Main");
         mainControllerGUI.getMainStage().show();
-    }
-
-    @FXML
-    void deleteBt(ActionEvent event) {
-
-    }
-
-    @FXML
-    void goToUpdate(ActionEvent event) {
-
     }
 }

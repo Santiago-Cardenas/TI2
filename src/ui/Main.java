@@ -26,22 +26,7 @@ public class Main extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // TODO Auto-generated method stub
-        /**
-         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainWindow.fxml"));
-         mainControllerGUI = new MainControllerGUI();
-         fxmlLoader.setController(mainControllerGUI);
-         Parent root = fxmlLoader.load();
-         Scene scene = new Scene(root);
-
-
-         primaryStage.setScene(scene);
-         primaryStage.setTitle("Main");
-         //primaryStage.show();
-
-         */
         mainControllerGUI.startMain(mainPane);
-        //classroomgui.loadPane(mainPane);
     }
 
 }

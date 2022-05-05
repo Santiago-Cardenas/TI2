@@ -15,7 +15,7 @@
          <children>
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="231.0" layoutY="14.0" prefHeight="31.0" prefWidth="149.0" text="Tarea Integradora 2" textAlignment="CENTER" />
             <TextField fx:id="nameTxtUpdate" layoutX="256.0" layoutY="93.0" prefHeight="25.0" prefWidth="167.0" />
-            <Button fx:id="updatePerson" layoutX="150.0" layoutY="338.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="118.0" text="Update person" />
+            <Button layoutX="150.0" layoutY="338.0" mnemonicParsing="false" onAction="#updatePerson" prefHeight="48.0" prefWidth="118.0" text="Update person" />
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="231.0" layoutY="45.0" prefHeight="31.0" prefWidth="149.0" text="Update Window" textAlignment="CENTER" />
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="90.0" prefHeight="31.0" prefWidth="149.0" text="Person Name" textAlignment="CENTER" />
             <TextField fx:id="surnameTxtUpdate" layoutX="256.0" layoutY="130.0" prefHeight="25.0" prefWidth="167.0" />
@@ -33,7 +33,7 @@
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="107.0" layoutY="260.0" prefHeight="31.0" prefWidth="149.0" text="Person Height (Meters)" textAlignment="CENTER" />
             <TextField fx:id="nationalityTxtUpdate" layoutX="256.0" layoutY="302.0" prefHeight="25.0" prefWidth="167.0" />
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="299.0" prefHeight="31.0" prefWidth="149.0" text="Person Nationality" textAlignment="CENTER" />
-            <Button fx:id="goBackUpdate" layoutX="300.0" layoutY="338.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="118.0" text="Go Back" />
+            <Button layoutX="300.0" layoutY="338.0" mnemonicParsing="false" onAction="#goBackUpdate" prefHeight="48.0" prefWidth="118.0" text="Go Back" />
          </children>
       </Pane>
    </children>

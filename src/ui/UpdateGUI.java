@@ -64,7 +64,7 @@ public class UpdateGUI {
     @FXML
     void goBackUpdate(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SearchWindow.fxml"));
-        fxmlLoader.setController(mainControllerGUI);
+        fxmlLoader.setController(mainControllerGUI.getSearchGUI());
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         mainControllerGUI.getMainStage().setScene(scene);
