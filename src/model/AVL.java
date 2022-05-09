@@ -1,11 +1,11 @@
 package model;
 
-public class BST<E> {
+public class AVL {
 
 	private Node root;
 	private PersonManager personManager;
 
-	public BST() {
+	public AVL() {
 		personManager= new PersonManager();
 		root = null;
 	}
@@ -97,15 +97,4 @@ public class BST<E> {
 		return node;
 	}
 
-	@Override
-	public void delete(E element) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void search(E element) {
-		// TODO Auto-generated method stub
-		
-	}
 }

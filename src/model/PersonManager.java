@@ -18,13 +18,15 @@ public class PersonManager {
 
 
 
-    private void generatePerson() throws IOException {
-        String name=selectRandomName();
-        String surname=selectRandomSurName();
-        String bd=selectRandomBD();
-        String gender=selectRandomGender();
-        int height=selectRandomHeight();
+    private Person generatePerson() throws IOException {
+        String name = selectRandomName();
+        String surname = selectRandomSurName();
+        String bd = selectRandomBD();
+        String gender = selectRandomGender();
+        int height = selectRandomHeight();
+        Person newPerson = new Person(name,surname,gender,bd,age,height);
 
+        return newPerson;
     }
 
     public String selectRandomName() throws IOException {
@@ -36,9 +38,12 @@ public class PersonManager {
         int count=0;
         while (line != null && count!=valueName && end==false) {
             count++;
+            String[] parts = line.split(";|");
             if(count==valueName){
                 end=true;
-                randName=line;
+                for(int i=0; i< parts.length;i++){
+                    randName+=parts[i];
+                }
             }
             line = br.readLine();
         }

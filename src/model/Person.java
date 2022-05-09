@@ -12,11 +12,11 @@ public class Person {
     private int age,height;
     private String FILE_NAME_DATA_CSV_PATH = "data/babynames.csv";
 
-    public Person(String name, String surname, String gender, String nationality, String bd, int age, int height) {
+    public Person(String name, String surname, String gender, String bd, int age, int height) {
         this.name = name;
         this.surname = surname;
         this.gender = gender;
-        this.nationality = nationality;
+       // this.nationality = nationality;
         this.bd = bd;
         this.age = age;
         this.height = height;

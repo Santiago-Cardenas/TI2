@@ -7,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import model.AVL;
 
 import java.io.IOException;
 
@@ -19,6 +20,8 @@ public class GenerateGUI {
     private Stage searchStage;
 
     private MainControllerGUI mainControllerGUI;
+
+    private AVL bst;
 
 
     public GenerateGUI(MainControllerGUI mainControllerGUI){
